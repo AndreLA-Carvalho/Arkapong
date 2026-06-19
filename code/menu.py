@@ -66,6 +66,9 @@ class Menu:
         menu_option = 0
         clock = pygame.time.Clock() 
         title = titleEffect("ARKAPONG", pygame.font.Font(None, 80), SCREEN_WIDTH // 2, 140) 
+        pygame.mixer.music.load("asset/menu.mp3") 
+        pygame.mixer.music.play(-1) # Reproduz a música do menu em loop
+        pygame.mixer.music.set_volume(0.3)
         
         while True:
             clock.tick(60)
@@ -88,7 +91,7 @@ class Menu:
                     self.menu_text(20, MENU_OPTIONS[i], C_WHITE, (SCREEN_WIDTH // 2, 300 + i * 50))
                     
             self.menu_text(16, "A - Esquerda | D - Direita", C_WHITE, (SCREEN_WIDTH - 650, 550))
-            self.menu_text(16, "ESPACO - Atirar", C_WHITE, (SCREEN_WIDTH - 650, 570))
+            self.menu_text(16, "ESPACO - Lancar", C_WHITE, (SCREEN_WIDTH - 650, 570))
             self.menu_text(16, "ENTER - Selecionar", C_WHITE, (SCREEN_WIDTH - 650, 590))
                 
             # Processa eventos
