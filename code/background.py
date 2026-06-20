@@ -8,7 +8,7 @@ class Background(Entity):
         super().__init__(name, position)
         if name == 'menuBg1':
             original_width, original_height = self.surf.get_size()
-            scale_factor = 0.25  # Reduce to 25% of original size
+            scale_factor = 0.25
             new_width = int(original_width * scale_factor)
             new_height = int(original_height * scale_factor)
             self.surf = pygame.transform.scale(self.surf, (new_width, new_height))

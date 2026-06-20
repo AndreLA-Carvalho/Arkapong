@@ -76,7 +76,7 @@ class Menu:
             self.window.fill((0, 0, 0)) 
             
             for bg in self.background_layers:
-                if bg.name != 'menuBg1': 
+                if bg.name != 'menuBg1':
                     bg.move()
                 self.window.blit(source=bg.surf, dest=bg.rect) 
                 
