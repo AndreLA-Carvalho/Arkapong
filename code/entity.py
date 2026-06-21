@@ -14,7 +14,6 @@ class Entity(ABC):
         self.health = ENTITY_HEALTH[name]
         self.damage = ENTITY_DAMAGE[self.name]
         self.score = ENTITY_SCORE[self.name]
-        # self.shot_delay = ENTITY_SHOT_DELAY[self.name]
         pass
         
     @abstractmethod

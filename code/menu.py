@@ -90,9 +90,10 @@ class Menu:
                 else:
                     self.menu_text(20, MENU_OPTIONS[i], C_WHITE, (SCREEN_WIDTH // 2, 300 + i * 50))
                     
-            self.menu_text(16, "A - Esquerda | D - Direita", C_WHITE, (SCREEN_WIDTH - 650, 550))
-            self.menu_text(16, "ESPACO - Lancar", C_WHITE, (SCREEN_WIDTH - 650, 570))
-            self.menu_text(16, "ENTER - Selecionar", C_WHITE, (SCREEN_WIDTH - 650, 590))
+            self.menu_text(16, "W, A, S, D - Movimentar", C_WHITE, (SCREEN_WIDTH - 650, 530))
+            self.menu_text(16, "ESPACO - Lancar bolinha", C_WHITE, (SCREEN_WIDTH - 650, 550))
+            self.menu_text(16, "ENTER - Selecionar", C_WHITE, (SCREEN_WIDTH - 650, 570))
+            self.menu_text(16, "ESC - Sair", C_WHITE, (SCREEN_WIDTH - 650, 590))
                 
             # Processa eventos
             for event in pygame.event.get(): 
