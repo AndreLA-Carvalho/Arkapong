@@ -2,7 +2,7 @@ import sqlite3
 from datetime import datetime
 
 class DBProxy:
-    def __init__(self, db_name="asset/ranking.db"):
+    def __init__(self, db_name="ranking.db"):
         self.db_name = db_name
         self.create_table()
 
