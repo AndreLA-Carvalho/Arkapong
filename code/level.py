@@ -88,7 +88,7 @@ class Level:
         # Sistema de cronometro
         self.tempo_inicial = pygame.time.get_ticks()
         self.fonte_ui = pygame.font.SysFont("Arial", 18)
-        
+        self.clock = pygame.clock = pygame.time.Clock()
                 
     def run(self, player_score: list[int]):
         pygame.mixer_music.load(f"asset/level1.mp3")
@@ -96,6 +96,7 @@ class Level:
         pygame.mixer_music.set_volume(0.3)
         
         while True:
+            self.clock.tick(60)
             self.window.fill(C_DARK_BLUE)
             
             width_int = self.wall_right.left - self.wall_left.right

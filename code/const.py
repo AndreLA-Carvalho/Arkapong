@@ -15,8 +15,8 @@ ENTITY_SPEED = {
     'menuBg3': 3,
     'menuBg4': 1,
     'menuBg5': 1,
-    'Player': 0.1,
-    'Ball': 0.17,
+    'Player': 2,
+    'Ball': 3,
     'brick1': 0,
     'brick2': 0,
     'brick3': 0
